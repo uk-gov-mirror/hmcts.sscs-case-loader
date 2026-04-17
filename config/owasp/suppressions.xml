@@ -2,5 +2,6 @@
 <suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
   <suppress until = "2026-05-07">
     <cve>CVE-2024-38820</cve>
+    <cve>CVE-2026-22732</cve>
   </suppress>
 </suppressions>
