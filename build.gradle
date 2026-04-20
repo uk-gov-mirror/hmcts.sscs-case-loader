@@ -230,6 +230,9 @@ dependencyManagement {
       entry 'log4j-api'
       entry 'log4j-to-slf4j'
     }
+
+    // Latest possible version for Spring Boot 2
+    dependency group: 'org.springframework.security', name: 'spring-security-crypto', version: '5.8.16'
   }
 }
 
