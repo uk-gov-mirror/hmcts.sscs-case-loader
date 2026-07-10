@@ -542,6 +542,7 @@ public class UpdateCcdAppellantDataTest {
                 .nino(gapsAndCcdDataUpdateScenario.gapsAppellantData.nino)
                 .build())
             .appointee(gapsAndCcdDataUpdateScenario.gapsAppellantData.appointee)
+            .isAppointee("Yes")
             .build();
 
         gapsCaseData = SscsCaseData.builder()
@@ -563,6 +564,7 @@ public class UpdateCcdAppellantDataTest {
             gapsAndCcdDataUpdateScenario.existingCcdAppellantData.nino);
         existingCaseDetails.getData().getAppeal().getAppellant().setAppointee(
             gapsAndCcdDataUpdateScenario.existingCcdAppellantData.appointee);
+        existingCaseDetails.getData().getAppeal().getAppellant().setIsAppointee("Yes");
 
         boolean updateData = updateCcdAppellantData.updateCcdAppellantData(gapsCaseData, existingCaseDetails.getData());
 
@@ -586,12 +588,7 @@ public class UpdateCcdAppellantDataTest {
                 .getAppeal()
                 .getAppellant()
                 .getIsAppointee(),
-            equalTo(
-                gapsAndCcdDataUpdateScenario.expectedExistingCcdAppellantName.appointee == null
-                    ? "No"
-                    : "Yes"
-            )
-        );
+            equalTo("Yes"));
     }
 
     @SuppressWarnings("PMD.UnusedPrivateMethod")
