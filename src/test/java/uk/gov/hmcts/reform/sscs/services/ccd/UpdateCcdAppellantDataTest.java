@@ -519,8 +519,6 @@ public class UpdateCcdAppellantDataTest {
                 equalTo(""));
         assertThat(existingCaseDetails.getData().getAppeal().getAppellant().getIdentity().getNino(),
                 equalTo(normalisedNino));
-
-
     }
 
     @Test
@@ -582,6 +580,18 @@ public class UpdateCcdAppellantDataTest {
             .usingRecursiveComparison()
             .ignoringFields("id")
             .isEqualTo(existingCaseDetails.getData().getAppeal().getAppellant().getAppointee());
+
+        assertThat(
+            existingCaseDetails.getData()
+                .getAppeal()
+                .getAppellant()
+                .getIsAppointee(),
+            equalTo(
+                gapsAndCcdDataUpdateScenario.expectedExistingCcdAppellantName.appointee == null
+                    ? "No"
+                    : "Yes"
+            )
+        );
     }
 
     @SuppressWarnings("PMD.UnusedPrivateMethod")
