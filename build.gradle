@@ -289,6 +289,8 @@ dependencies {
 
   testImplementation group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
   testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '5.10.0'
+  testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.12.2'
+  testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.12.2'
 
   runtimeOnly group: 'org.springframework.boot', name: 'spring-boot-properties-migrator'
 }
