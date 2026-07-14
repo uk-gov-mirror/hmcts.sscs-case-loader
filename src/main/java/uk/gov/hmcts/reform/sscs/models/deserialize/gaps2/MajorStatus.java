@@ -18,7 +18,7 @@ public class MajorStatus implements Comparable<MajorStatus> {
     @JsonAlias("Date_Set")
     ZonedDateTime dateSet;
 
-    public MajorStatus( String bfDate,
+    public MajorStatus(String bfDate,
                         String statusId,
                         String dateClosed,
                         ZonedDateTime dateSet) {

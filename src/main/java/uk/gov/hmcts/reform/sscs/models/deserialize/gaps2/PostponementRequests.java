@@ -17,7 +17,7 @@ public class PostponementRequests {
     @JsonAlias("Role_Requested_By_Id")
     String roleRequestedById;
 
-    public PostponementRequests( String postponementGranted,
+    public PostponementRequests(String postponementGranted,
                         String appealHearingId,
                         String postponementReasonId,
                         String roleRequestedById) {

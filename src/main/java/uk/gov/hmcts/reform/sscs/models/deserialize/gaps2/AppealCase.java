@@ -84,7 +84,7 @@ public class AppealCase {
     @JsonAlias("Additional_Ref")
     String additionalRef;
 
-    public AppealCase( String appealCaseDateOfDecision,
+    public AppealCase(String appealCaseDateOfDecision,
                        String adminTeamId,
                        String originatingOfficeId,
                        String appealCaseDateFtaResponseReceived,
@@ -104,8 +104,7 @@ public class AppealCase {
                        String appealCaseDateAppealReceived,
                        List<PostponementRequests> postponementRequests,
                        List<MinorStatus> minorStatus,
-                       String additionalRef)
-                       {
+                       String additionalRef) {
         this.appealCaseDateOfDecision = appealCaseDateOfDecision;
         this.adminTeamId = adminTeamId;
         this.originatingOfficeId = originatingOfficeId;

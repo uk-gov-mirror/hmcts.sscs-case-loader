@@ -40,7 +40,7 @@ public class Parties {
     @JsonAlias("Role_Id")
     Integer roleId;
 
-    public Parties( String initials,
+    public Parties(String initials,
              String title,
              String surname,
              String email,

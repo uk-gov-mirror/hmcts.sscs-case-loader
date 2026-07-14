@@ -28,7 +28,7 @@ public class Hearing {
     @JsonAlias("Hearing_Id")
     String hearingId;
 
-    public Hearing( String outcomeId,
+    public Hearing(String outcomeId,
                     String venueId,
                     String dateOutcomeDecisionNotification,
                     String dateHearingNotification,
