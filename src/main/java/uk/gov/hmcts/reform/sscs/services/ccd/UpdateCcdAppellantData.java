@@ -27,6 +27,7 @@ class UpdateCcdAppellantData {
                     .identity(gapsAppellant.getAppointee().getIdentity())
                     .address(gapsAppellant.getAppointee().getAddress())
                     .build())
+                .confidentialityRequired(gapsAppellant.getConfidentialityRequired())
                 .confidentialityRequirement(gapsAppellant.getConfidentialityRequirement())
                 .isAddressSameAsAppointee(gapsAppellant.getIsAddressSameAsAppointee())
                 .isAppointee(gapsAppellant.getIsAppointee())
