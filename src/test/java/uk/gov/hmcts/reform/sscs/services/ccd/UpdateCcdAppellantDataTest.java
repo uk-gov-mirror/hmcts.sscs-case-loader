@@ -337,7 +337,7 @@ public class UpdateCcdAppellantDataTest {
                 .build())
             .isAppointee("No")
             .isAddressSameAsAppointee("Yes")
-            .confidentialityRequired(YesNo.NO)
+            .confidentialityRequirement(YesNoUndetermined.NO)
             .role(Role.builder().build())
             .build();
 
@@ -367,8 +367,8 @@ public class UpdateCcdAppellantDataTest {
             equalTo("No"));
         assertThat(existingCcdCaseData.getAppeal().getAppellant().getIsAddressSameAsAppointee(),
             equalTo("Yes"));
-        assertThat(existingCcdCaseData.getAppeal().getAppellant().getConfidentialityRequired(),
-            equalTo(YesNo.NO));
+        assertThat(existingCcdCaseData.getAppeal().getAppellant().getConfidentialityRequirement(),
+            equalTo(YesNoUndetermined.NO));
         assertNotNull(existingCcdCaseData.getAppeal().getAppellant().getRole());
     }
 
