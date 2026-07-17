@@ -6,22 +6,16 @@ import lombok.Value;
 
 @Value
 public class MajorStatus implements Comparable<MajorStatus> {
-    @JsonAlias("BF_Date")
+
     String bfDate;
-
-    @JsonAlias("Status_Id")
     String statusId;
-
-    @JsonAlias("Date_Closed")
     String dateClosed;
-
-    @JsonAlias("Date_Set")
     ZonedDateTime dateSet;
 
-    public MajorStatus(String bfDate,
-                        String statusId,
-                        String dateClosed,
-                        ZonedDateTime dateSet) {
+    public MajorStatus(@JsonAlias("BF_Date") String bfDate,
+                       @JsonAlias("Status_Id") String statusId,
+                       @JsonAlias("Date_Closed") String dateClosed,
+                       @JsonAlias("Date_Set") ZonedDateTime dateSet) {
         this.bfDate = bfDate;
         this.statusId = statusId;
         this.dateClosed = dateClosed;

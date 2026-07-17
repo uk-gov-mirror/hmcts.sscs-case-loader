@@ -21,90 +21,49 @@ public class AppealCase {
         "401", "600", "602",
         "603", "604", "605", "608");
 
-    @JsonAlias("Appeal_Case_Date_of_Decision")
     String appealCaseDateOfDecision;
-
-    @JsonAlias("Admin_Team_Id")
     String adminTeamId;
-
-    @JsonAlias("Originating_Office_Id")
     String originatingOfficeId;
-
-    @JsonAlias("Appeal_Case_Date_FTA_Response_Received")
     String appealCaseDateFtaResponseReceived;
-
-    @JsonAlias("Further_Evidence")
     List<FurtherEvidence> furtherEvidence;
-
-    @JsonAlias("Appeal_Case_RefNum")
     String appealCaseRefNum;
-
-    @JsonAlias("Major_Status")
     List<MajorStatus> majorStatus;
-
-    @JsonAlias("Extract_Time_UTC")
     String extractTimeUtc;
-
-    @JsonAlias("Appeal_Case_BF_Date")
     String appealCaseBfDate;
-
-    @JsonAlias("Parties")
     List<Parties> parties;
-
-    @JsonAlias("Hearing")
     List<Hearing> hearing;
-
-    @JsonAlias("Tribunal_Type_Id")
     String tribunalTypeId;
-
-    @JsonAlias("Appeal_Case_NINO")
     String appealCaseNino;
-
-    @JsonAlias("Appeal_Case_Id")
     String appealCaseId;
-
-    @JsonAlias("Appeal_Case_Major_Id")
     String appealCaseMajorId;
-
-    @JsonAlias("Appeal_Case_Case_Code_Id")
     String appealCaseCaseCodeId;
-
-    @JsonAlias("Appeal_Case_Date_Appeal_Made")
     String appealCaseDateAppealMade;
-
-    @JsonAlias("Appeal_Case_Date_Appeal_Received")
     String appealCaseDateAppealReceived;
-
-    @JsonAlias("Postponement_Requests")
     List<PostponementRequests> postponementRequests;
-
-    @JsonAlias("Minor_Status")
     List<MinorStatus> minorStatus;
-
-    @JsonAlias("Additional_Ref")
     String additionalRef;
 
-    public AppealCase(String appealCaseDateOfDecision,
-                       String adminTeamId,
-                       String originatingOfficeId,
-                       String appealCaseDateFtaResponseReceived,
-                       List<FurtherEvidence> furtherEvidence,
-                       String appealCaseRefNum,
-                       List<MajorStatus> majorStatus,
-                       String extractTimeUtc,
-                       String appealCaseBfDate,
-                       List<Parties> parties,
-                       List<Hearing> hearing,
-                       String tribunalTypeId,
-                       String appealCaseNino,
-                       String appealCaseId,
-                       String appealCaseMajorId,
-                       String appealCaseCaseCodeId,
-                       String appealCaseDateAppealMade,
-                       String appealCaseDateAppealReceived,
-                       List<PostponementRequests> postponementRequests,
-                       List<MinorStatus> minorStatus,
-                       String additionalRef) {
+    public AppealCase(@JsonAlias("Appeal_Case_Date_of_Decision") String appealCaseDateOfDecision,
+                      @JsonAlias("Admin_Team_Id") String adminTeamId,
+                      @JsonAlias("Originating_Office_Id") String originatingOfficeId,
+                      @JsonAlias("Appeal_Case_Date_FTA_Response_Received") String appealCaseDateFtaResponseReceived,
+                      @JsonAlias("Further_Evidence") List<FurtherEvidence> furtherEvidence,
+                      @JsonAlias("Appeal_Case_RefNum") String appealCaseRefNum,
+                      @JsonAlias("Major_Status") List<MajorStatus> majorStatus,
+                      @JsonAlias("Extract_Time_UTC") String extractTimeUtc,
+                      @JsonAlias("Appeal_Case_BF_Date") String appealCaseBfDate,
+                      @JsonAlias("Parties") List<Parties> parties,
+                      @JsonAlias("Hearing") List<Hearing> hearing,
+                      @JsonAlias("Tribunal_Type_Id") String tribunalTypeId,
+                      @JsonAlias("Appeal_Case_NINO") String appealCaseNino,
+                      @JsonAlias("Appeal_Case_Id") String appealCaseId,
+                      @JsonAlias("Appeal_Case_Major_Id") String appealCaseMajorId,
+                      @JsonAlias("Appeal_Case_Case_Code_Id") String appealCaseCaseCodeId,
+                      @JsonAlias("Appeal_Case_Date_Appeal_Made") String appealCaseDateAppealMade,
+                      @JsonAlias("Appeal_Case_Date_Appeal_Received") String appealCaseDateAppealReceived,
+                      @JsonAlias("Postponement_Requests") List<PostponementRequests> postponementRequests,
+                      @JsonAlias("Minor_Status") List<MinorStatus> minorStatus,
+                      @JsonAlias("Additional_Ref") String additionalRef) {
         this.appealCaseDateOfDecision = appealCaseDateOfDecision;
         this.adminTeamId = adminTeamId;
         this.originatingOfficeId = originatingOfficeId;
