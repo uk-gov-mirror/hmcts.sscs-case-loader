@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.retry.annotation.EnableRetry;
 import uk.gov.hmcts.reform.sscs.ccd.config.CcdRequestDetails;
 
-@EnableBatchProcessing
 @SpringBootApplication
 @SuppressWarnings("HideUtilityClassConstructor")
 @EnableFeignClients(basePackages = {
