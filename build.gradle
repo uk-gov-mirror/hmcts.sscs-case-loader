@@ -214,17 +214,14 @@ dependencyManagement {
   }
 
   dependencies {
-    // CVE-2022-1471
-//    dependency group:'org.yaml', name:'snakeyaml', version:'2.6'
-
-    // CVE-2025-48924
-//    dependency group: 'org.apache.commons', name: 'commons-lang3', version: '3.20.0'
+    // CVE-2026-34478, CVE-2026-34479, CVE-2026-34480, CVE-2025-68161, CVE-2026-34477, CVE-2026-34481, CVE-2026-49844
+    dependencySet(group:'org.apache.logging.log4j', version:'2.26.1') {
+      entry 'log4j-api'
+      entry 'log4j-core'
+      entry 'log4j-to-slf4j'
+    }
   }
 }
-
-//ext {
-//  set('log4j2.version', '2.26.1')
-//}
 
 def versions = [
   jackson : '2.22.1',
